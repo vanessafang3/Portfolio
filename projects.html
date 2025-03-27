@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Vanessa Fang</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="styles.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="projects-page">
+  <div id="navbar-container"></div>
+
+  <section class="projects-header">
+    <h1>PROJECTS</h1>
+    <p>Explore my projects that showcase my skills in embedded systems, web development, and hardware-software
+      integration. Click on the project cards to learn more about each project.</p>
+
+  </section>
+
+  <section class="project-container">
+    <div class="project-card">
+      <img src="images/gesturehome.png" alt="GestureHome">
+      <div class="project-content">
+        <h3>GestureHome</h3>
+        <p>A home automation system that allows users to control devices through hand gestures, utilizing the Raspberry
+          Pi and Computer Vision.</p>
+        <button class="read-more" onclick="openModal('modal1')">Read More</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/timeball.png" alt="Time Ball">
+      <div class="project-content">
+        <h3>Time Ball</h3>
+        <p>Raspberry Pi-powered replica of historic time balls to mimic their noon drop, blending history and technology
+          for a showcase at the South Street Seaport Museum.</p>
+        <button class="read-more" onclick="openModal('modal2')">Read More</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/ocaml.png" alt="Project 3">
+      <div class="project-content">
+        <h3>OCaml Travel</h3>
+        <p>Terminal-based application that scrapes data from websites providing bus services such as MegaBus and OurBus
+          and outputs all available routes based on user input. </p>
+        <button class="read-more" onclick="openModal('modal3')">Read More</button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/duck.png" alt="Project 4">
+      <div class="project-content">
+        <h3>Project Name</h3>
+        <p>...</p>
+        <button class="read-more" onclick="openModal('modal4')">Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h3>GestureHome</h3>
+      <p>GestureHome is an innovative home automation system that allows users to control devices through hand gestures,
+        utilizing the Raspberry Pi. Designed to assist individuals with limited mobility, the system enables seamless
+        control of lights, fans, and speakers via a user interface displayed on a monitor.
+      </p>
+      <p>
+        Utilizing OpenCV and MediaPipe, GestureHome captures real-time video through the Raspberry Pi camera to track
+        hand positions and movements. This process identifies the coordinates of 21 hand points, allowing users to
+        navigate menu options with the index fingertip. Additionally, the distance between the thumb and index finger
+        can be measured to adjust settings like light brightness, speaker volume, and fan speed. The system effectively
+        translates these hand motions into precise control commands for various devices.
+      </p>
+      <div class="modal-buttons">
+        <a href="https://github.com/vanessafang3/GestureHome" target="_blank" class="button github-button">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://courses.ece.cornell.edu/ece5990/ECE5725_Fall2023_Projects/4%20Friday%20December%208/5%20Gesture%20Home%20/GestureHome_web/index.html"
+          target="_blank" class="button website-button">
+          <i class="fas fa-globe"></i> Website
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h3>Time Ball</h3>
+      <p>In the 19th and early 20th centuries, ships used time balls to synchronize their chronometers by dropping a
+        large ball from a mast at noon, allowing sailors to set their clocks accurately before long voyages. The Titanic
+        Memorial Lighthouse, built in 1913, featured a time ball that dropped daily at noon, and today’s famous example
+        is the New Year's Eve Ball Drop in Times Square, inspired by this tradition.
+      </p>
+      <p>
+        Inspired by historic time balls, Professor Skovira and I are developing a Raspberry Pi-powered replica. This
+        version uses 3D-printed gears, bicycle chains, and Python to mimic the original’s noon drop. Our project merges
+        history and technology while honoring the legacy of the South Street Seaport time ball, and we plan to showcase
+        it at the South Street Seaport Museum on Titanic Remembrance Day.
+      </p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <h3>OCaml Travel</h3>
+      <p>A terminal-based application that scrapes data from websites providing bus services such as MegaBus and OurBus
+        and outputs all available routes based on user input. This application will also have filtering features based
+        on start date, end date, time, location, price, and relevancy. The application will eventually have some form of
+        automatic ranking system to rank all available bus routes for the user based on the parameters entered.</p>
+      <div class="modal-buttons">
+        <a href="https://github.com/DylanTom/svd" target="_blank" class="button github-button">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <h3>Project Name</h3>
+      <p>... </p>
+    </div>
+  </div>
+
+  <div id="footer-container"></div>
+</body>
+
+</html>
