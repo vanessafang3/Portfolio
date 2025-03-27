@@ -1,16 +1,3 @@
-// ABOUT PAGE
-function loadhomepage() {
-  fetch("about.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("home-page").innerHTML = data;
-      attachNavEventListeners();
-    });
-}
-
-document.addEventListener("DOMContentLoaded", loadhomepage);
-
-
 // NAVIGATION BAR
 function loadNavbar() {
   fetch("nav.html")
