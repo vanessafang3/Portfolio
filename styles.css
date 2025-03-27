@@ -592,3 +592,51 @@ h1 {
     }
   }
 }
+
+/* Photography Page */
+.photography-page nav {
+  box-shadow: none;
+  border-bottom: none;
+}
+.photography-header {
+  background: var(--secondary-bg);
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px var(--shadow);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+} 
+.photography-header h1 {
+  color: var(--accent);
+  font-size: 40px;
+  margin: 0;
+}
+.photography-header p {
+  font-size: 20px;
+  color: var(--text-dark);
+  margin-top: 10px;
+  width: 80%;
+  margin: auto;
+  line-height: 1.5;
+  text-align: center;
+  padding-top: 30px;
+}
+.photography-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.photography-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+.photography-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
