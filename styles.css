@@ -553,7 +553,7 @@ h1 {
 .tech-icons {
   display: flex;
   gap: 20px;
-  animation: scroll 6s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 .tech-icons img,
