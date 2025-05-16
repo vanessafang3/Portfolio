@@ -208,6 +208,17 @@ h1 {
   font: Roboto, sans-serif;
 }
 
+.description-button {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  transition: background 0.3s ease;
+}
 .divider {
   border: none;
   border-top: 2px solid var(--accent);
