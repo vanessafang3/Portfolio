@@ -52,10 +52,10 @@
     </div>
 
     <div class="project-card">
-      <img src="images/duck.png" alt="Project 4">
+      <img src="images/petbowl.png" alt="Project 4">
       <div class="project-content">
-        <h3>Project Name</h3>
-        <p>...</p>
+        <h3>Pet Bowl Detection</h3>
+        <p>A CNN-driven AI system that identifies whether pet food bowls are empty or full in real-time.</p>
         <button class="read-more" onclick="openModal('modal4')">Read More</button>
       </div>
     </div>
@@ -126,10 +126,24 @@
   <div id="modal4" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal4')">&times;</span>
-      <h3>Project Name</h3>
-      <p>... </p>
+      <h3>Pet Bowl Detection</h3>
+      <p>We built an AI system that could detect whether a pet food bowl was empty or full using computer vision.
+        Originally, we planned to use CNNs to classify images of bowls into three categories (full, partially full, and
+        empty) and to apply object detection to locate the bowls in the image. However, as the project progressed, we
+        realized that detecting water and defining "partially full" was too subjective and complex for our scope, so we
+        narrowed our focus to binary classification of food bowls. We experimented with several models, including ResNet
+        and CLIP Zero-Shot, but ultimately chose a CNN model due to its high accuracy. We evaluated each model’s
+        performance using a test set and found CNN to be the most reliable. </p>
+      <div class="modal-buttons">
+        <a href="https://github.coecis.cornell.edu/cs4701-24fa-projects/HZ_Toto_kjw252_sh967_vf72/tree/main"
+          target="_blank" class="button github-button">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
     </div>
   </div>
+
+
 
   <div id="footer-container"></div>
 </body>
